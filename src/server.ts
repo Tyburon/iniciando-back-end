@@ -3,7 +3,8 @@ import 'express-async-errors';
 import 'reflect-metadata';
 
 import express from 'express';
-import routes from './routes/index'
+import routes from './routes';
+import cors from 'cors';
 import uploadConfig from './config/upload';
 import AppError from './error/AppError';
 
@@ -11,6 +12,7 @@ import './database/index'
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use('/files', express.static(uploadConfig.directory));
 app.use(express.urlencoded());
