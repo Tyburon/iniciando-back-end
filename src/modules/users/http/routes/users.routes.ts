@@ -1,11 +1,11 @@
 import { Router, response } from 'express';
 import multer from 'multer';
-import uploadConfig from '../config/upload';
+import uploadConfig from '@config/upload';
 
-import CreateUserService from '../services/CreateUserService';
-import UpdateUserAvatarService from '../services/UpdateUserAvatarService';
+import CreateUserService from '@modules/users/services/CreateUserService';
+import UpdateUserAvatarService from '@modules/users/services/UpdateUserAvatarService';
 
-import ensureAuthenticated from '../middlewares/ensureAuthenticated';
+import ensureAuthenticated from '@modules/users/http/middlewares/ensureAuthenticated';
 
 //Rota: Receber a requisição, chamar outro arquivo, devolver uma resposta
 
