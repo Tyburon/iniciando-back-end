@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import CreateAppointmentService from '@modules/appointments/services/CreatAppointmentService';
+import CreateAppointmentService from '@modules/appointments/services/CreateAppointmentService';
 import { parseISO } from 'date-fns';
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
