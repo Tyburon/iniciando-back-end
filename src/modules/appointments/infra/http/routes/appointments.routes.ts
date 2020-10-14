@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import { Router } from 'express';
 import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAuthenticated';
 
