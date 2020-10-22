@@ -9,7 +9,6 @@ class DiskStorageProvider implements IStorageProvider {
       path.resolve(UploadConfig.tmpFolder, file),
       path.resolve(UploadConfig.uploadsFolder, file),
     );
-
     return file;
   }
 
