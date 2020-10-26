@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import ListProvidersService from '@modules/appointments/services/ListProvidersService';
-import { parseISO } from 'date-fns';
+import { classToClass } from 'class-transformer';
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
@@ -18,6 +18,6 @@ export default class ProvidersController {
       user_id,
     });
 
-    return response.json(providers);
+    return response.json(classToClass(providers));
   }
 }
